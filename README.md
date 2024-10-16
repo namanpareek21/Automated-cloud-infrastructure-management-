@@ -1,14 +1,21 @@
 **GCP Cloud Infrastructure Automation using Python, Cloud Functions, and Cloud Scheduler**
+
 This project automates the management of Google Cloud Platform (GCP) services for non-production environments using Python scripts, Cloud Functions, and Cloud Scheduler. The automation reduces cloud costs by controlling services such as Compute Engine, Cloud SQL, and Kubernetes, automatically starting and stopping them based on scheduled times.
 
-Key Features
-Automated Cloud Management: Python scripts that automate starting and stopping GCP services based on schedules.
-Serverless Cloud Functions: Deployed Cloud Functions to execute the Python scripts, ensuring efficiency and scalability.
-Scheduled Tasks: Cloud Scheduler triggers Cloud Functions to run the automation scripts at predefined intervals.
-Cost Optimization: Automated control over non-production cloud resources reduces unnecessary resource consumption during off-hours.
-Role-Based Access Control (RBAC): Service accounts with precise roles to ensure secure automation workflows.
-Project Structure
-bash
+**Key Features**
+
+**Automated Cloud Management:** Python scripts that automate starting and stopping GCP services based on schedules.
+
+**Serverless Cloud Functions:**  Deployed Cloud Functions to execute the Python scripts, ensuring efficiency and scalability.
+
+**Scheduled Tasks**: Cloud Scheduler triggers Cloud Functions to run the automation scripts at predefined intervals.
+
+**Cost Optimization:** Automated control over non-production cloud resources reduces unnecessary resource consumption during off-hours.
+
+**Role-Based Access Control (RBAC):** Service accounts with precise roles to ensure secure automation workflows.
+
+**Project Structure**
+
 Copy code
 ├── src
 │   ├── start_services.py         # Python script to start GCP services
@@ -28,16 +35,17 @@ Prerequisites
 Google Cloud SDK: Ensure you have the GCloud SDK installed and configured.
 Terraform: Install Terraform for infrastructure provisioning.
 Python 3.x: Ensure Python is installed for scripting.
-Setup Guide
+
+**Setup Guide**
 Clone the Repository:
 
-bash
+
 Copy code
 git clone https://github.com/your-username/cloud-infra-automation.git
 cd cloud-infra-automation
 Configure GCP: Set up your GCP project and ensure you have the correct IAM roles to manage Cloud Functions and Cloud Scheduler.
 
-Deploy Terraform:
+**Deploy Terraform:**
 
 Navigate to the terraform/ directory.
 Initialize and apply Terraform to provision necessary resources:

@@ -14,16 +14,8 @@ This project automates the management of Google Cloud Platform (GCP) services fo
 
 **Role-Based Access Control (RBAC):** Service accounts with precise roles to ensure secure automation workflows.
 
-**Project Structure**
+**Technologies Used**
 
-Copy code
-├── src
-│   ├── start_services.py         # Python script to start GCP services
-│   ├── stop_services.py          # Python script to stop GCP services
-├── terraform
-│   ├── main.tf                   # Terraform configuration for provisioning Cloud Functions and Scheduler
-├── README.md                     # Project documentation
-Technologies Used
 Google Cloud Platform (GCP)
 Cloud Functions
 Cloud Scheduler
@@ -31,15 +23,15 @@ Compute Engine
 Cloud SQL
 Python: Automation scripting language.
 Terraform: Infrastructure as code for deploying cloud resources.
-Prerequisites
+
+**Prerequisites**
+
 Google Cloud SDK: Ensure you have the GCloud SDK installed and configured.
 Terraform: Install Terraform for infrastructure provisioning.
 Python 3.x: Ensure Python is installed for scripting.
 
 **Setup Guide**
-Clone the Repository:
-
-
+**Clone the Repository:**
 Copy code
 git clone https://github.com/your-username/cloud-infra-automation.git
 cd cloud-infra-automation
@@ -58,7 +50,7 @@ Python Script Configuration:
 Edit start_services.py and stop_services.py with the service names and project configurations you want to control.
 Deploy Cloud Functions: Use Terraform to deploy the Python scripts as Cloud Functions:
 
-bash
+
 Copy code
 terraform apply
 Set Up Cloud Scheduler:
@@ -68,13 +60,12 @@ Usage
 Once the Terraform script is applied, Cloud Scheduler will automatically trigger the Cloud Functions at the defined intervals. You can monitor the execution of Cloud Functions and manage the logs through the GCP Console.
 
 To manually test the automation:
-bash
+
 Copy code
 gcloud functions call start_services_function
 gcloud functions call stop_services_function
 Contributing
 Feel free to fork this repository, submit pull requests, or raise issues. Contributions are welcome to improve the project further.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 

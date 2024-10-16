@@ -21,14 +21,14 @@ Cloud Functions
 Cloud Scheduler
 Compute Engine
 Cloud SQL
-Python: Automation scripting language.
-Terraform: Infrastructure as code for deploying cloud resources.
+**Python:** Automation scripting language.
+**Terraform:** Infrastructure as code for deploying cloud resources.
 
 **Prerequisites**
 
-Google Cloud SDK: Ensure you have the GCloud SDK installed and configured.
-Terraform: Install Terraform for infrastructure provisioning.
-Python 3.x: Ensure Python is installed for scripting.
+**Google Cloud SDK:** Ensure you have the GCloud SDK installed and configured.
+**Terraform:** Install Terraform for infrastructure provisioning.
+**Python 3.x:** Ensure Python is installed for scripting.
 
 **Setup Guide**
 **Clone the Repository:**
@@ -45,8 +45,7 @@ bash
 Copy code
 terraform init
 terraform apply
-Python Script Configuration:
-
+**Python Script Configuration:**
 Edit start_services.py and stop_services.py with the service names and project configurations you want to control.
 **Deploy Cloud Functions:** Use Terraform to deploy the Python scripts as Cloud Functions:
 

@@ -48,18 +48,18 @@ terraform apply
 Python Script Configuration:
 
 Edit start_services.py and stop_services.py with the service names and project configurations you want to control.
-Deploy Cloud Functions: Use Terraform to deploy the Python scripts as Cloud Functions:
+**Deploy Cloud Functions:** Use Terraform to deploy the Python scripts as Cloud Functions:
 
 
 Copy code
 terraform apply
-Set Up Cloud Scheduler:
+**Set Up Cloud Scheduler:**
 
 Configure Cloud Scheduler to trigger the Cloud Functions at specific times (e.g., during non-working hours for stop and start).
 Usage
 Once the Terraform script is applied, Cloud Scheduler will automatically trigger the Cloud Functions at the defined intervals. You can monitor the execution of Cloud Functions and manage the logs through the GCP Console.
 
-To manually test the automation:
+**To manually test the automation:**
 
 Copy code
 gcloud functions call start_services_function
